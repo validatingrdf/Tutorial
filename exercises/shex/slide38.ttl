@@ -1,0 +1,34 @@
+@prefix :      <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+:cs102  :hasStudent  :alice ;
+        :university  :uniovi ;
+        schema:name  "Data structures" .
+
+:bob    a                 schema:Person ;
+        :isEnroledIn      :cs101 ;
+        schema:birthDate  "1980-03-10"^^xsd:date ;
+        schema:gender     schema:Male ;
+        schema:name       "Robert" .
+
+:carol  a            schema:Person ;
+        :teaches     :cs101 ;
+        schema:name  "Carol" .
+
+:uniovi  :employee   :carol ;
+        :hasCourse   :cs102 , :cs101 ;
+        schema:name  "University of Oviedo" .
+
+:cs101  :hasStudent  :alice , :bob ;
+        :university  :uniovi ;
+        schema:name  "Programming" .
+
+:alice  a              schema:Person ;
+        :hasFriend     :bob ;
+        :isEnroledIn   :cs102 , :cs101 ;
+        schema:gender  schema:Female ;
+        schema:knows   :bob ;
+        schema:mbox    <mailto:alice@example.com> ;
+        schema:name    "Alice" .

@@ -1,0 +1,30 @@
+prefix : <http://example.org/>
+prefix schema: <http://schema.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:University {
+ schema:name xsd:string   ;
+ :hasCourse  @:Course   * ;
+ :employee   @:Teacher  *
+}
+
+:Course { 
+  schema:name xsd:string     ;
+  :university @:University   ;
+  :hasStudent @:Student    * ;
+}
+
+:Teacher {
+    a           [schema:Person] ;
+    schema:name xsd:string      ;
+    :teaches    @:Course   +
+}
+
+:Student {
+    a            [ schema:Person ] ;
+    schema:name  xsd:string        ;
+    schema:mbox  IRI        ?      ;
+    :hasFriend   @:Student  *      ;
+    :isEnroledIn @:Course   *
+}
+
