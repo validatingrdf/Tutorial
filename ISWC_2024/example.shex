@@ -1,5 +1,14 @@
-prefix : <http://example.org/>
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-:S {
-    :p .
+<Researcher> { 
+ rdfs:label  xsd:string  ;
+ :birthPlace @<Place> ;
+ :birthDate  xsd:date  ;
+ :employer   @<Organization>
 }
+
+<Place> {} 
+<Organization> {}
