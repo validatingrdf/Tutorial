@@ -8,6 +8,6 @@ prefix : <http://example.org/>
            :start 1984; 
            end 1994 
         |} .
-:CERN a :Organization .        
+:CERN a :Organization .
 
 
