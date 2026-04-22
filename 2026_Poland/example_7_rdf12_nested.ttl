@@ -1,0 +1,32 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+:timbl a :Human ;
+ rdfs:label "Tim Berners Lee" ;
+ :employer :CERN {| 
+   :start "1984"        
+       {| :accordingTo :wikidata {| 
+          :statedIn "2024-05-02"^^xsd:date 
+          |} 
+       |} ;
+    :end  "1994" {| 
+          :accordingTo :wikidata {| 
+          :statedIn "2024-05-02"^^xsd:date |} |}
+        |}
+ {| :start "1980"        {| :accordingTo :wikidata {| :statedIn "2024-05-01"^^xsd:date |} |} ;
+     :end  "1980"        {| :accordingTo :wikidata {| :statedIn "2024-05-01"^^xsd:date |} |}
+  |} ;
+ :award    :PA   
+   {| :year 2002  {| 
+        :accordingTo :wikidata {| 
+           :statedIn "2024-05-01"^^xsd:date 
+        |} 
+    |} ;
+      :together_with :vint {| 
+          :accordingTo :wikidata {| 
+             :statedIn "2024-05-01"^^xsd:date |} |}  
+     |} 
+.

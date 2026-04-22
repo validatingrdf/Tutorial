@@ -1,0 +1,7 @@
+select ?name ?dateLabel ?countryLabel where {
+ wd:Q80 wdt:P1559 ?name .
+ wd:Q80 wdt:P569 ?date .
+ wd:Q80 wdt:P19  ?place .
+ ?place  wdt:P17  ?country
+ SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }            
+}
