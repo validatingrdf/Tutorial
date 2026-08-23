@@ -1,0 +1,7 @@
+SPARQL """
+ PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+ PREFIX wd: <http://www.wikidata.org/entity/>
+
+ SELECT ?person WHERE {
+  ?person wdt:P106 wd:Q1650915 
+} LIMIT 10"""@:Researcher

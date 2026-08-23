@@ -1,0 +1,6 @@
+SPARQL """
+ PREFIX : <http://example.org/>
+ SELECT ?person WHERE {
+  ?person :name  ?name;
+          :knows :a
+}"""@:Person

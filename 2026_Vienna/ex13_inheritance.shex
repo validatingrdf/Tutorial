@@ -1,0 +1,14 @@
+prefix : <http://example.org/>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Book {
+ :name    xsd:string ;
+ :author  @:Person   ;
+ :code    /isbn:[0-9]{13}/   ;
+ :code    /isbn:[0-9X]{10}/  
+}
+
+:LibraryBook extends @:Book {
+ :code    /internal:[0-9]*/ ;
+}
+:Person {}
