@@ -1,0 +1,8 @@
+n1: PersonType,
+n2: PlaceType,
+n3: CountryType,
+n4: OrganizationType,
+r1: BirthPlaceType,
+r2: CountryEdgeType,
+r3: EmployerType,
+r4: EmployerType

@@ -1,0 +1,21 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sx: <http://www.w3.org/ns/shex#> .
+@prefix : <http://example.org/> .
+:Person a sx:ShapeDecl ;
+	sx:shapeExpr _:2 .
+_:1 a sx:Schema ;
+	sx:shapes ( :Person ) .
+_:2 a sx:Shape ;
+	sx:expression _:3 .
+_:3 a sx:EachOf ;
+	sx:expressions ( _:6 _:4 ) .
+_:4 sx:predicate :knows ;
+	sx:valueExpr :Person ;
+	a sx:TripleConstraint ;
+	sx:max -1 ;
+	sx:min 0 .
+_:6 sx:predicate :name ;
+	sx:valueExpr _:7 ;
+	a sx:TripleConstraint .
+_:7 sx:datatype xsd:string ;
+	a sx:NodeConstraint .
