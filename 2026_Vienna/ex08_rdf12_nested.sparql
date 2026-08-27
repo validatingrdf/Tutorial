@@ -2,6 +2,6 @@ PREFIX : <http://example.org/>
 SELECT ?person ?employer ?start ?end WHERE {
  ?person a         :Human ;
  :employer ?employer {| :start ?start ;
-                        :end  ?end 
+                        :end   ?end 
  |} 
 }

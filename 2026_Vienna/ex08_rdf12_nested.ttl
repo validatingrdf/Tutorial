@@ -16,8 +16,12 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
           :accordingTo :wikidata {| 
           :statedIn "2024-05-02"^^xsd:date |} |}
         |}
- {| :start "1980"        {| :accordingTo :wikidata {| :statedIn "2024-05-01"^^xsd:date |} |} ;
-     :end  "1980"        {| :accordingTo :wikidata {| :statedIn "2024-05-01"^^xsd:date |} |}
+ {| :start "1980"        {| 
+       :accordingTo :wikidata {| 
+           :statedIn "2024-05-01"^^xsd:date |} |} ;
+     :end  "1980"        {| 
+        :accordingTo :wikidata {| 
+            :statedIn "2024-05-01"^^xsd:date |} |}
   |} ;
  :award    :PA   
    {| :year 2002  {| 
