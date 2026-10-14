@@ -1,8 +1,21 @@
 # Examples for ISWC 2026 tutorial
-- dataLabel: Tim Berners Lee
+- dataLabel: Tim Berners Lee in RDF
   dataURL: ex01.ttl
-  queryURL: ex01.sparql 
+  dataFormat: turtle
   comment: 'Tim Berners-Lee in RDF Turtle format'
+  action: data
+- dataLabel: Tim Berners Lee in RDF (SPARQL query)
+  dataURL: ex01.ttl
+  dataFormat: turtle
+  queryURL: ex01.sparql
+  queryEngine: sparql
+  comment: 'Tim Berners-Lee in RDF Turtle format and SPARQL query'
+  action: query
+- dataLabel: Tim Berners Lee as a property graph
+  dataURL: ex02.pg
+  dataFormat: yars-pg
+  comment: 'Tim Berners-Lee as a property graph'
+  action: data
 - schemaLabel: Researcher
   schemaURL: ex11_researcher.shex
   dataLabel: Tim Berners Lee
@@ -10,3 +23,4 @@
   queryMapURL: ex11.sm 
   status: conformant
   comment: 'Basic example of Tim Berners-Lee as a researcher'
+  action: validate
