@@ -1,4 +1,8 @@
 # Examples for ISWC 2026 tutorial
+- dataLabel: Tim Berners Lee
+  dataURL: ex01.ttl
+  queryURL: ex01.sparql 
+  comment: 'Tim Berners-Lee in RDF Turtle format'
 - schemaLabel: Researcher
   schemaURL: ex11_researcher.shex
   dataLabel: Tim Berners Lee
