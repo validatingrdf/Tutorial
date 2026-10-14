@@ -1,0 +1,7 @@
+prefix : <http://example.org/> 
+
+:item23 :name       "Weaving the Web"    ;
+        :author     :timbl               ;
+        :code       "isbn:006251587X"    ;
+        :code       "isbn:9780062515872" ;
+        :code       "internal:234"       .

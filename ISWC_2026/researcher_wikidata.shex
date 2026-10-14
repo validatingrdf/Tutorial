@@ -1,0 +1,7 @@
+prefix wd: <http://www.wikidata.org/entity/> 
+prefix wdt: <http://www.wikidata.org/prop/direct/> 
+prefix : <http://example.org/>
+
+:Researcher {
+    wdt:P31 [ wd:Q5 ];  # instance of human
+}

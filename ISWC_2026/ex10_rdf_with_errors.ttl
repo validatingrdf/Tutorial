@@ -1,0 +1,18 @@
+prefix : <http://example.org/> 
+
+:timbl a            :Human            ;
+       :name        "Tim Berners-Lee" ;
+       :knows       :bob              .
+
+:alice a            :Human            ;
+       :name        234               .
+
+:bob   a            :Human            ;
+       :name        "Bob", "Robert"   ;
+       :knows       :CERN             .
+
+:carol  a           :Human            ;
+        :birthPlace :Dog              .
+
+:CERN   a           :Organization     ;
+       :name       "CERN"            .

@@ -1,0 +1,9 @@
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+SELECT ?name ?date?country WHERE {
+ wd:Q80 wdt:P1559 ?name .
+ wd:Q80 wdt:P569  ?date .
+ wd:Q80 wdt:P19  ?place .
+ ?place wdt:P17  ?country
+}

@@ -1,0 +1,22 @@
+CREATE NODE TYPE ( PersonType : Person {
+    (name: STRING ),
+    OPTIONAL birthDate: INTEGER
+}) ;
+CREATE NODE TYPE ( OrganizationType : Organization {
+    (name: STRING )
+}) ;
+CREATE NODE TYPE ( PlaceType : City & Metropolis {
+    (name: STRING )
+}) ;
+CREATE NODE TYPE ( CountryType : Country {
+    (name: STRING )
+}) ;
+CREATE EDGE TYPE (:@PersonType)
+                 -[EmployerType : employer { start: INTEGER, end: INTEGER }]->
+                 (:@OrganizationType) ;
+CREATE EDGE TYPE (:@PersonType) 
+                 -[BirthPlaceType : birthPlace]->
+                 (:@PlaceType) ;
+CREATE EDGE TYPE (:@PlaceType) 
+                 -[CountryEdgeType : country]->
+                 (:@CountryType) 

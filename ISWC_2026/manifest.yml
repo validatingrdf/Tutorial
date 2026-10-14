@@ -1,0 +1,8 @@
+# Examples for ISWC 2026 tutorial
+- schemaLabel: Researcher
+  schemaURL: ex11_researcher.shex
+  dataLabel: Tim Berners Lee
+  dataURL: ex11_timbl.ttl
+  queryMapURL: ex11.sm 
+  status: conformant
+  comment: 'Basic example of Tim Berners-Lee as a researcher'
