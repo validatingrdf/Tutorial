@@ -37,13 +37,13 @@
   dataLabel: Tim Berners Lee in RDF 1.2 annotated triples
   dataURL: ex05_annotated.ttl
   dataFormat: turtle
-  query: ex05_sparql.sparql
+  queryURL: ex05_sparql.sparql
   action: query
 - comment: 'RDF 1.2 with reifies SPARQL query'
   dataLabel: Tim Berners Lee in RDF 1.2 with reifies
   dataURL: ex05_with_reifies.ttl
   dataFormat: turtle
-  query: ex05_sparql.sparql
+  queryURL: ex05_sparql.sparql
   action: query
 - comment: 'RDF 1.2 non-asserted'
   dataLabel: Tim Berners Lee in RDF 1.2 non asserted
