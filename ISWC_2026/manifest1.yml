@@ -1,0 +1,87 @@
+# Examples for ISWC 2026 tutorial
+- dataLabel: Tim Berners Lee in RDF
+  dataURL: ex01.ttl
+  dataFormat: turtle
+  comment: 'Tim Berners-Lee in RDF Turtle format'
+  action: data
+- dataLabel: Tim Berners Lee in RDF (SPARQL query)
+  dataURL: ex01.ttl
+  dataFormat: turtle
+  queryURL: ex01.sparql
+  queryEngine: sparql
+  comment: 'Tim Berners-Lee in RDF Turtle format and SPARQL query'
+  action: query
+- dataLabel: Tim Berners Lee as a property graph
+  dataURL: ex02.pg
+  dataFormat: yars-pg
+  comment: 'Tim Berners-Lee as a property graph'
+  action: data
+# Example 4: wikidata query
+- endpoint: wikidata
+  queryURL: ex04_wikidata.sparql
+  queryEngine: sparql
+  comment: 'Wikidata SPARQL query'  
+  action: query
+# Example 5 RDF 1.2 annotated triples
+- comment: 'RDF 1.2 annotated triples'
+  dataLabel: Tim Berners Lee in RDF 1.2 annotated triples
+  dataURL: ex05_annotated.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 with reifies'
+  dataLabel: Tim Berners Lee in RDF 1.2 with reifies
+  dataURL: ex05_with_reifies.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 annotated SPARQL query'
+  dataLabel: Tim Berners Lee in RDF 1.2 annotated triples
+  dataURL: ex05_annotated.ttl
+  dataFormat: turtle
+  query: ex05_sparql.sparql
+  action: query
+- comment: 'RDF 1.2 with reifies SPARQL query'
+  dataLabel: Tim Berners Lee in RDF 1.2 with reifies
+  dataURL: ex05_with_reifies.ttl
+  dataFormat: turtle
+  query: ex05_sparql.sparql
+  action: query
+- comment: 'RDF 1.2 non-asserted'
+  dataLabel: Tim Berners Lee in RDF 1.2 non asserted
+  dataURL: ex06_rdf12_non_asserted.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 non-asserted with reifies'
+  dataLabel: RDF 1.2 non asserted with reifies
+  dataURL: ex06_rdf12_with_reifies.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 Tim Berners-Lee'
+  dataLabel: Tim Berners Lee in RDF 1.2
+  dataURL: ex07_timbl_rdf12.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 Tim Berners-Lee (nested)'
+  dataLabel: Tim Berners Lee in RDF 1.2 
+  dataURL: ex08_rdf12_nested.ttl
+  dataFormat: turtle
+  action: data
+- comment: 'RDF 1.2 Tim Berners-Lee (nested) SPARQL query'
+  dataLabel: Tim Berners Lee in RDF 1.2 (nested)
+  dataURL: ex08_rdf12_nested.ttl
+  dataFormat: turtle
+  queryURL: ex08_rdf12_nested.sparql
+  queryEngine: sparql
+  action: query
+- comment: 'RDF with errors'
+  dataLabel: Example with errors
+  dataURL: ex10_rdf_with_errors.ttl
+  dataFormat: turtle
+  action: data
+- schemaLabel: Researcher
+  schemaURL: ex11_researcher.shex
+  dataLabel: Tim Berners Lee
+  dataURL: ex11_timbl.ttl
+  queryMapURL: ex11.sm 
+  status: conformant
+  comment: 'Basic example of Tim Berners-Lee as a researcher'
+  action: validate
