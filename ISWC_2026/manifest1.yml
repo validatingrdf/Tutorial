@@ -103,7 +103,7 @@
   action: validate    
 - comment: 'SHACL with recursion'
   schemaLabel: Researcher
-  schemaURL: ex14_recursive.ttl
+  schemaURL: ex14_recursive_shacl.ttl
   dataLabel: Tim Berners Lee
   dataURL: ex11_timbl.ttl
   status: conformant
@@ -126,6 +126,17 @@
   status: nonconformant
   validationEngine: shacl
   action: validate          
+# DCTAP
+- comment: 'DCTAP'
+  schemaLabel: Researcher
+  schemaURL: ex17_dctap.csv
+  schemaFormat: dctap
+  dataLabel: Tim Berners Lee
+  dataURL: ex11_timbl.ttl
+  dataFormat: turtle
+  status: conformant
+  validationEngine: dctap
+  action: validate
 # PGSchema 
 - comment: 'PGSchema'
   schemaLabel: Researcher
@@ -134,6 +145,18 @@
   dataLabel: Tim Berners Lee
   dataURL: ex18_timbl.pg
   dataFormat: yars-pg
+  typeMap: ex18_timbl.map
   status: conformant
   validationEngine: pgschema
-  action: validate          
+  action: validate
+# SHACL 1.2
+- comment: 'SHACL 1.2'
+  schemaLabel: Researcher
+  schemaURL: ex19_shacl12.ttl
+  schemaFormat: turtle
+  dataLabel: Tim Berners Lee
+  dataURL: ex06_rdf12_non_asserted.ttl
+  dataFormat: turtle
+  status: conformant
+  validationEngine: shacl
+  action: validate
