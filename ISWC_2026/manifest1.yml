@@ -1,66 +1,66 @@
 # Examples for ISWC 2026 tutorial
-- dataLabel: Tim Berners Lee in RDF
+- dataLabel: RDF Data (Tim Berners Lee)
   dataURL: ex01.ttl
   dataFormat: turtle
   comment: 'Tim Berners-Lee in RDF Turtle format'
   action: data
-- dataLabel: Tim Berners Lee in RDF (SPARQL query)
+- comment: 'RDF and SPARQL (Tim Berners Lee)'
+  dataLabel: Tim Berners Lee
   dataURL: ex01.ttl
   dataFormat: turtle
   queryURL: ex01.sparql
   queryEngine: sparql
-  comment: 'Tim Berners-Lee in RDF Turtle format and SPARQL query'
   action: query
-- dataLabel: Tim Berners Lee as a property graph
+- comment: 'Property graph (Tim Berners Lee)'
+  dataLabel: Tim Berners
   dataURL: ex02.pg
   dataFormat: yars-pg
-  comment: 'Tim Berners-Lee as a property graph'
   action: data
 # Example 4: wikidata query
-- endpoint: https://query.wikidata.org/sparql
+- comment: 'Wikidata SPARQL query'  
+  endpoint: https://query.wikidata.org/sparql
   queryURL: ex04_wikidata.sparql
   queryEngine: sparql
-  comment: 'Wikidata SPARQL query'  
   action: query
 # Example 5 RDF 1.2 annotated triples
-- comment: 'RDF 1.2 annotated triples'
-  dataLabel: Tim Berners Lee in RDF 1.2 annotated triples
+- comment: 'RDF 1.2 (annotated triples)'
+  dataLabel: Tim Berners Lee 
   dataURL: ex05_annotated.ttl
   dataFormat: turtle
   action: data
-- comment: 'RDF 1.2 with reifies'
+- comment: 'RDF 1.2 (reifies)'
   dataLabel: Tim Berners Lee in RDF 1.2 with reifies
   dataURL: ex05_with_reifies.ttl
   dataFormat: turtle
   action: data
-- comment: 'RDF 1.2 annotated SPARQL query'
+- comment: 'RDF and SPARQL 1.2 annotated syntax'
   dataLabel: Tim Berners Lee in RDF 1.2 annotated triples
   dataURL: ex05_annotated.ttl
   dataFormat: turtle
   queryURL: ex05_sparql.sparql
   action: query
-- comment: 'RDF 1.2 with reifies SPARQL query'
-  dataLabel: Tim Berners Lee in RDF 1.2 with reifies
+- comment: 'RDF and SPARQL 1.2 with reifies'
+  dataLabel: Tim Berners Lee
   dataURL: ex05_with_reifies.ttl
   dataFormat: turtle
   queryURL: ex05_sparql.sparql
   action: query
-- comment: 'RDF 1.2 non-asserted'
+- comment: 'RDF 1.2 (non-asserted)'
   dataLabel: Tim Berners Lee in RDF 1.2 non asserted
   dataURL: ex06_rdf12_non_asserted.ttl
   dataFormat: turtle
   action: data
-- comment: 'RDF 1.2 non-asserted with reifies'
+- comment: 'RDF 1.2 (non-asserted with reifies)'
   dataLabel: RDF 1.2 non asserted with reifies
   dataURL: ex06_rdf12_with_reifies.ttl
   dataFormat: turtle
   action: data
-- comment: 'RDF 1.2 Tim Berners-Lee'
+- comment: 'RDF 1.2 (Tim Berners-Lee)'
   dataLabel: Tim Berners Lee in RDF 1.2
   dataURL: ex07_timbl_rdf12.ttl
   dataFormat: turtle
   action: data
-- comment: 'RDF 1.2 Tim Berners-Lee (nested)'
+- comment: 'RDF 1.2 (Tim Berners-Lee nested)'
   dataLabel: Tim Berners Lee in RDF 1.2 
   dataURL: ex08_rdf12_nested.ttl
   dataFormat: turtle
@@ -93,6 +93,11 @@
   queryMapURL: ex12.sm 
   status: nonconformant
   action: validate  
+- comment: 'Basic example of Tim Berners-Lee as a researcher'
+  schemaLabel: Researcher
+  schemaURL: ex11_researcher.shex
+  schemaFormat: shex
+  action: schema
 - comment: 'ShEx: Inheritance'
   schemaLabel: Book
   schemaURL: ex13_inheritance.shex
@@ -126,16 +131,20 @@
   status: nonconformant
   validationEngine: shacl
   action: validate          
-# DCTAP
-- comment: 'DCTAP'
+- comment: 'DCTAP (shex)'
   schemaLabel: Researcher
   schemaURL: ex17_dctap.csv
-  schemaFormat: dctap
+  schemaFormat: csv
+  schemaEngine: dctap
+  prefixes: |
+    BASE <http://example.org/>
+    PREFIX : <http://example.org/>
   dataLabel: Tim Berners Lee
   dataURL: ex11_timbl.ttl
   dataFormat: turtle
+  queryMap: ":timbl@:Researcher"
   status: conformant
-  validationEngine: dctap
+  validationEngine: shex
   action: validate
 # PGSchema 
 - comment: 'PGSchema'
@@ -145,7 +154,7 @@
   dataLabel: Tim Berners Lee
   dataURL: ex18_timbl.pg
   dataFormat: yars-pg
-  typeMap: ex18_timbl.map
+  typeMapURL: ex18_timbl.map
   status: conformant
   validationEngine: pgschema
   action: validate
