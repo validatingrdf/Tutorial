@@ -17,7 +17,7 @@
   comment: 'Tim Berners-Lee as a property graph'
   action: data
 # Example 4: wikidata query
-- endpoint: wikidata
+- endpoint: https://query.wikidata.org/sparql
   queryURL: ex04_wikidata.sparql
   queryEngine: sparql
   comment: 'Wikidata SPARQL query'  
