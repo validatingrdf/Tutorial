@@ -137,6 +137,16 @@
   status: conformant
   validationEngine: dctap
   action: validate
+- comment: 'DCTAP (shex)'
+  schemaLabel: Researcher
+  schemaURL: ex17_dctap.csv
+  schemaFormat: dctap
+  dataLabel: Tim Berners Lee
+  dataURL: ex11_timbl.ttl
+  dataFormat: turtle
+  status: conformant
+  validationEngine: shex
+  action: validate
 # PGSchema 
 - comment: 'PGSchema'
   schemaLabel: Researcher
