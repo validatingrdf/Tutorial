@@ -145,7 +145,7 @@
   dataLabel: Tim Berners Lee
   dataURL: ex18_timbl.pg
   dataFormat: yars-pg
-  typeMap: ex18_timbl.map
+  typeMapURL: ex18_timbl.map
   status: conformant
   validationEngine: pgschema
   action: validate
