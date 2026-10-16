@@ -126,24 +126,18 @@
   status: nonconformant
   validationEngine: shacl
   action: validate          
-# DCTAP
-- comment: 'DCTAP'
-  schemaLabel: Researcher
-  schemaURL: ex17_dctap.csv
-  schemaFormat: dctap
-  dataLabel: Tim Berners Lee
-  dataURL: ex11_timbl.ttl
-  dataFormat: turtle
-  status: conformant
-  validationEngine: dctap
-  action: validate
 - comment: 'DCTAP (shex)'
   schemaLabel: Researcher
   schemaURL: ex17_dctap.csv
-  schemaFormat: dctap
+  schemaFormat: csv
+  schemaEngine: dctap
+  prefixes: |
+    BASE <http://example.org/>
+    PREFIX : <http://example.org/>
   dataLabel: Tim Berners Lee
   dataURL: ex11_timbl.ttl
   dataFormat: turtle
+  queryMap: ":timbl@:Researcher"
   status: conformant
   validationEngine: shex
   action: validate
