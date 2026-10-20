@@ -1,8 +1,8 @@
 # Examples for ISWC 2026 tutorial
-- dataLabel: RDF Data (Tim Berners Lee)
+- comment: 'Tim Berners-Lee in RDF (Turtle)'
+  dataLabel: example 01
   dataURL: ex01.ttl
   dataFormat: turtle
-  comment: 'Tim Berners-Lee in RDF Turtle format'
   action: data
 - comment: 'RDF and SPARQL (Tim Berners Lee)'
   dataLabel: Tim Berners Lee
@@ -93,6 +93,16 @@
   queryMapURL: ex12.sm 
   status: nonconformant
   action: validate  
+# Shape maps
+- comment: Query map with a focus node
+  schemaLabel: Person
+  schemaURL: ex12.shex
+  dataLabel: Several values
+  dataURL: ex13_persons.ttl
+  queryMap: |
+      {FOCUS a :Person}@:Person
+  status: nonconformant
+  action: validate
 - comment: 'Basic example of Tim Berners-Lee as a researcher'
   schemaLabel: Researcher
   schemaURL: ex11_researcher.shex

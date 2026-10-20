@@ -1,0 +1,19 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+:a  a        :Person         ;
+    :name    "Alice"           ;
+    :knows   :b                .
+:b  a        :Person         ;
+    :knows   :a                ;
+    :name    "Bob"             .
+:c  a        :Person         ;
+    :name    "Carol", "Carole" .
+:d  a        :Person         ;
+    :name    234               .
+:e  a        :Person         ;
+    :name    "Emily"           .
+:f  a        :Person         ;
+    :name    "Frank"           ;
+    :email   "frank@mail.com"  ;
+    :knows   :a, :c            .
