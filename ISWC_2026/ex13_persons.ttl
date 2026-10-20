@@ -12,7 +12,7 @@ prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 :d  a        :Person         ;
     :name    234               .
 :e  a        :Person         ;
-    :name    "Emily"           .
+    :namme   "Emily"           .
 :f  a        :Person         ;
     :name    "Frank"           ;
     :email   "frank@mail.com"  ;

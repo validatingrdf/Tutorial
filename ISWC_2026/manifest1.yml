@@ -94,13 +94,36 @@
   status: nonconformant
   action: validate  
 # Shape maps
-- comment: Query map with a focus node
+- comment: shapemap: instance of :Person
   schemaLabel: Person
   schemaURL: ex12.shex
   dataLabel: Several values
   dataURL: ex13_persons.ttl
   queryMap: |
       {FOCUS a :Person}@:Person
+  status: nonconformant
+  action: validate
+- comment: shapemap: has property :name
+  schemaLabel: Person
+  schemaURL: ex12.shex
+  dataLabel: Several values
+  dataURL: ex13_persons.ttl
+  queryMap: |
+      {FOCUS a _}@:Person
+  status: nonconformant
+  action: validate
+- comment: shapemap: SPARQL query
+  schemaLabel: Person
+  schemaURL: ex12.shex
+  dataLabel: Several values
+  dataURL: ex13_persons.ttl
+  queryMap: |
+      SPARQL """
+      PREFIX : <http://example.org/>
+      SELECT ?person WHERE {
+       ?person :name  ?name;
+               :knows :a
+      }"""@:Person
   status: nonconformant
   action: validate
 - comment: 'Basic example of Tim Berners-Lee as a researcher'
