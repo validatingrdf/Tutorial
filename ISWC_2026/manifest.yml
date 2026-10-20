@@ -94,7 +94,7 @@
   status: nonconformant
   action: validate  
 # Shape maps
-- comment: shapemap: instance of :Person
+- comment: 'ShapeMap: instance of :Person'
   schemaLabel: Person
   schemaURL: ex12.shex
   dataLabel: Several values
@@ -103,7 +103,7 @@
       {FOCUS a :Person}@:Person
   status: nonconformant
   action: validate
-- comment: shapemap: has property :name
+- comment: 'ShapeMap: has property :name'
   schemaLabel: Person
   schemaURL: ex12.shex
   dataLabel: Several values
@@ -112,7 +112,7 @@
       {FOCUS a _}@:Person
   status: nonconformant
   action: validate
-- comment: shapemap: SPARQL query
+- comment: 'ShapeMap: SPARQL query'
   schemaLabel: Person
   schemaURL: ex12.shex
   dataLabel: Several values
