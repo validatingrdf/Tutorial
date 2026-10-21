@@ -115,7 +115,7 @@
        schemaURL: ShEx/node_constraints.shex
        dataLabel: item23
        dataURL: ShEx/node_constraints.ttl
-       queryMapURL: ShEx/node_constraints.map 
+       queryMapURL: ShEx/node_constraints.sm
        status: conformant
        action: validate  
      - comment: 'Cardinalities'
@@ -123,7 +123,15 @@
        schemaURL: ShEx/cardinalities.shex
        dataLabel: item23
        dataURL: ShEx/cardinalities.ttl
-       queryMapURL: ShEx/cardinalities.map 
+       queryMapURL: ShEx/cardinalities.sm 
+       status: conformant
+       action: validate  
+     - comment: 'Cyclic data models'
+       schemaLabel: Book
+       schemaURL: ShEx/recursion.shex
+       dataLabel: item23
+       dataURL: ShEx/recursion.ttl
+       queryMapURL: ShEx/recursion.sm
        status: conformant
        action: validate  
      # Shape maps

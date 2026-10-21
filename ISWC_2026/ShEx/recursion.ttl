@@ -1,0 +1,32 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+
+:item23 
+ :title         "Weaving the Web" ;
+ :datePublished "2012-03-05"^^xsd:date ;
+ :numberOfPages 272  ;  
+ :author        :timbl ;
+ :genre         :NonFiction ;  
+ :isbn          "isbn:006251587X" ;
+ :publisher     <http://www.harpercollins.com/> ;
+ :audio         <http://audio.com/item23> ;
+ :maintainer    :alice ;
+ :related       :item24 .
+
+:item24 :title "Validating RDF data" ;
+        :author :jelg, :eric, :ib, :dk .
+
+:timbl :name "Tim Berners-Lee" .
+:jelg :name "Jose Emilio Labra Gayo" ;
+      :birthPlace :oviedo            ;
+      :worksFor :uniovi              .
+:eric :name "Eric Prud'hommeaux" .
+:ib   :name "Iovka Boneva" .
+:dk   :name "Dimitris Kontokostas" .
+:oviedo :name "Oviedo";
+        :country :spain .
+:spain :name "Spain" . 
+:uniovi :name "Universidad de Oviedo" ;
+        :employee :jelg .
