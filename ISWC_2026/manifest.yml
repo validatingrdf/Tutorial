@@ -118,6 +118,14 @@
        queryMapURL: ShEx/node_constraints.map 
        status: conformant
        action: validate  
+     - comment: 'Cardinalities'
+       schemaLabel: Book
+       schemaURL: ShEx/cardinalities.shex
+       dataLabel: item23
+       dataURL: ShEx/cardinalities.ttl
+       queryMapURL: ShEx/cardinalities.map 
+       status: conformant
+       action: validate  
      # Shape maps
      - comment: 'ShapeMap: instance of :Person'
        schemaLabel: Person

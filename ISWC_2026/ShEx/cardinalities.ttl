@@ -1,0 +1,10 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+
+:item23
+  :name          "Weaving the Web"      ;
+  :numberOfPages 272                    ;  
+  :author        :timbl, :markFischetti ;
+  :maintainer    :alice,:bob            .
