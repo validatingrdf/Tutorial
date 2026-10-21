@@ -102,12 +102,20 @@
        queryMapURL: ex12.sm 
        status: nonconformant
        action: validate  
-     - comment: 'ShEx: Person basic'
+     - comment: 'Basic validation'
        schemaLabel: Person
        schemaURL: ShEx/two_nodes_person.shex
        dataLabel: a and b
        dataURL: ShEx/two_nodes.ttl
        queryMapURL: ShEx/two_nodes.map 
+       status: conformant
+       action: validate  
+     - comment: 'Node Constraints'
+       schemaLabel: Book
+       schemaURL: ShEx/node_constraints.shex
+       dataLabel: item23
+       dataURL: ShEx/node_constraints.ttl
+       queryMapURL: ShEx/node_constraints.map 
        status: conformant
        action: validate  
      # Shape maps
