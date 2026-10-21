@@ -224,29 +224,12 @@
   examples:
   - comment: 'SHACL with recursion'
     schemaLabel: Researcher
-    schemaURL: ex14_recursive_shacl.ttl
+    schemaURL: SHACL/shacl_recursive.ttl
     dataLabel: Tim Berners Lee
-    dataURL: ex11_timbl.ttl
+    dataURL: SHACL/timbl.ttl
     status: conformant
     validationEngine: shacl
     action: validate      
-    # SHACL
-  - comment: 'SHACL valid'
-    schemaLabel: Researcher
-    schemaURL: ex15_shacl.ttl
-    dataLabel: Tim Berners Lee
-    dataURL: ex15.ttl
-    status: conformant
-    validationEngine: shacl
-    action: validate        
-  - comment: 'SHACL with errors'
-    schemaLabel: Researcher
-    schemaURL: ex15_shacl_with_errors.ttl
-    dataLabel: Tim Berners Lee
-    dataURL: ex15.ttl
-    status: nonconformant
-    validationEngine: shacl
-    action: validate          
   - comment: 'DCTAP (shex)'
     schemaLabel: Researcher
     schemaURL: ex17_dctap.csv
