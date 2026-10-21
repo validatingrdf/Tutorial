@@ -207,12 +207,7 @@
         }"""@:Person
        status: nonconformant
        action: validate
-     - comment: 'Basic example of Tim Berners-Lee as a researcher'
-       schemaLabel: Researcher
-       schemaURL: ex11_researcher.shex
-       schemaFormat: shex
-       action: schema
-     - comment: 'ShEx: Inheritance'
+     - comment: 'Inheritance'
        schemaLabel: Book
        schemaURL: ex13_inheritance.shex
        dataLabel: Item
@@ -220,6 +215,11 @@
        queryMapURL: ex13_inheritance.sm 
        status: conformant
        action: validate    
+     - comment: 'Different syntaxes'
+       schemaLabel: Researcher
+       schemaURL: ex11_researcher.shex
+       schemaFormat: shex
+       action: schema
 - section: SHACL
   examples:
   - comment: 'SHACL with recursion'
