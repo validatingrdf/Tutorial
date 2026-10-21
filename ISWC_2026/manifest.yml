@@ -166,6 +166,14 @@
        queryMapURL: ShEx/logical.sm
        status: nonconformant
        action: validate  
+     - comment: 'Importing schemas'
+       schemaLabel: Book and AudioBook
+       schemaURL: ShEx/import.shex
+       dataLabel: item24
+       dataURL: ShEx/import.ttl
+       queryMapURL: ShEx/import.sm
+       status: conformant
+       action: validate  
      # Shape maps
      - comment: 'ShapeMap: instance of :Person'
        schemaLabel: Person

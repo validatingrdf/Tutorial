@@ -1,0 +1,10 @@
+prefix :       <http://www.validatingrdf.com/examples/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+import <https://www.validatingrdf.com/examples/book.shex>
+
+:AudioBook @:Book AND {
+ schema:name          MaxLength 20 ;
+ schema:readBy        @:Person     ;
+}
