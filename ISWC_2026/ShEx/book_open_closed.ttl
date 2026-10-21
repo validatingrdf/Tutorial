@@ -5,4 +5,4 @@ prefix foaf:   <http://xmlns.com/foaf/0.1/>
 
 :item23
   :name          "Weaving the Web"      ;
-  :numberOfPages 272                    .
+  :isbn          "006251587X"           .
