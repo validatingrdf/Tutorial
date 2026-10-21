@@ -1,0 +1,12 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix foaf:   <http://xmlns.com/foaf/0.1/>
+
+:item23 :code "isbn:006251587X" .
+:item24 :code 24                .
+:item25 :code "isbn:006251587X"    ;
+        :code "isbn:9780062515872" .
+:item26 :code "isbn:006251587X" ;
+        :code 26                .     
+

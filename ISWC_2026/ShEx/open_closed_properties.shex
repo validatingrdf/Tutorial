@@ -1,0 +1,17 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:Book1 {
+ :code /^isbn:[0-9X]{10}$/ ;
+}
+
+:Book2 {
+  :code  /^isbn:[0-9X]{10}$/ ;
+  :code  /^isbn:[0-9]{13}$/  
+}
+
+:Book3 EXTRA :code {
+ :code /^isbn:[0-9X]{10}$/ ;
+}
+

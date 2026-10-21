@@ -142,6 +142,14 @@
        queryMapURL: ShEx/book_open_closed.sm
        status: conformant
        action: validate  
+     - comment: 'Open/Closed properties'
+       schemaLabel: Book1, Book2 and Book3
+       schemaURL: ShEx/open_closed_properties.shex
+       dataLabel: item23, item24, item25 and item 26
+       dataURL: ShEx/open_closed_properties.ttl
+       queryMapURL: ShEx/open_closed_properties.sm
+       status: conformant
+       action: validate  
      # Shape maps
      - comment: 'ShapeMap: instance of :Person'
        schemaLabel: Person
