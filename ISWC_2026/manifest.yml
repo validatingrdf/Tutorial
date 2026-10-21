@@ -134,6 +134,14 @@
        queryMapURL: ShEx/recursion.sm
        status: conformant
        action: validate  
+     - comment: 'Open/Closed shapes'
+       schemaLabel: Book1 and Book2
+       schemaURL: ShEx/book_open_closed.shex
+       dataLabel: item23
+       dataURL: ShEx/book_open_closed.ttl
+       queryMapURL: ShEx/book_open_closed.sm
+       status: conformant
+       action: validate  
      # Shape maps
      - comment: 'ShapeMap: instance of :Person'
        schemaLabel: Person

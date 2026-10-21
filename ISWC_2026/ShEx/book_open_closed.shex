@@ -1,0 +1,7 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:Book1   {  :name xsd:string }
+
+:Book2 CLOSED { :name xsd:string }
