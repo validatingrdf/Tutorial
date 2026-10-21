@@ -1,0 +1,20 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:Book {
+ :name   xsd:string ;
+ :author @:Person OR @:Organization ;
+}
+
+:AudioBook @:Book AND {
+ :name          MaxLength 20 ;
+ :readBy        @:Person     ;
+} AND NOT {
+ :numberOfPages . +
+}
+
+:Person {}
+:Organization {}
+
+
