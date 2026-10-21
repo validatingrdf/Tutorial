@@ -148,7 +148,15 @@
        dataLabel: item23, item24, item25 and item 26
        dataURL: ShEx/open_closed_properties.ttl
        queryMapURL: ShEx/open_closed_properties.sm
-       status: conformant
+       status: nonconformant
+       action: validate  
+     - comment: 'Triple expressions'
+       schemaLabel: Person
+       schemaURL: ShEx/triple_exprs.shex
+       dataLabel: alice, bob, dave and carol
+       dataURL: ShEx/triple_exprs.ttl
+       queryMapURL: ShEx/triple_exprs.sm
+       status: nonconformant
        action: validate  
      # Shape maps
      - comment: 'ShapeMap: instance of :Person'

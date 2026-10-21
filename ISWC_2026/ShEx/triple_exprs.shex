@@ -1,0 +1,12 @@
+prefix :       <http://example.org/>
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+
+:Person {
+ ( :name       xsd:string |
+   :firstName xsd:string  + ;
+   :lastName  xsd:string
+ ) ; 
+ :birthDate   xsd:date    ? 
+}
+
