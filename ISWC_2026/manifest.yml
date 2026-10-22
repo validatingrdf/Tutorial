@@ -295,7 +295,7 @@
     validationEngine: shacl
     action: validate
   - section: Non-validating constraints  
-  - examples:
+    examples:
     - comment: 'targetNode'
       schemaLabel: UserShape
       schemaURL: SHACL/target_nodes_shapes.ttl

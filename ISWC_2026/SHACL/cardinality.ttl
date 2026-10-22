@@ -4,12 +4,14 @@ prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
 prefix schema: <http://schema.org/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
-:alice schema:follows :bob, 
+:alice a :User ;
+       schema:follows :bob, 
                       :carol .
 	   
-:bob   schema:follows :alice .
+:bob   a :User ;
+       schema:follows :alice .
 
-:carol schema:follows :alice, 
+:carol a :User ;schema:follows :alice, 
                       :bob, 
                       :carol, 
                       :dave .
