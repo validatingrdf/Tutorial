@@ -547,10 +547,10 @@
   # SHACL 1.2
   - comment: 'SHACL 1.2'
     schemaLabel: Researcher
-    schemaURL: ex19_shacl12.ttl
+    schemaURL: SHACL12/user_shapes.ttl
     schemaFormat: turtle
     dataLabel: Tim Berners Lee
-    dataURL: ex06_rdf12_non_asserted.ttl
+    dataURL: SHACL12/user.ttl
     dataFormat: turtle
     status: conformant
     validationEngine: shacl

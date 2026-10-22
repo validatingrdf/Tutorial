@@ -1,0 +1,20 @@
+prefix : <http://example.org/> 
+prefix sh: <http://www.w3.org/ns/shacl#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+:UserShape a sh:NodeShape ;
+ sh:targetClass :User ;
+ sh:property [
+  sh:path :employer ;
+  sh:reificationRequired true ;
+  sh:reifierShape [
+   sh:property [
+    sh:path :start ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ; sh:maxCount 1
+  ] ;
+  sh:property [
+   sh:path :end ;
+   sh:datatype xsd:integer ;
+   sh:minCount 1 ; sh:maxCount 1
+ ]]] . 

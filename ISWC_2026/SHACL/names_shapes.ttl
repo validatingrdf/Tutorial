@@ -8,13 +8,13 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 :UserShape a sh:NodeShape ;
  sh:targetClass :User ;
  sh:sparql [ a sh:SPARQLConstraint ;
-  sh:message "schema:name must equal schema:givenName+schema:familyName";
+  sh:message "Vaue of schema:name = \"{$name}\" must be equal to \"{$givenName} {$familyName}\"";
   sh:prefixes [ sh:declare [
     sh:prefix "schema" ; 
     sh:namespace "http://schema.org/"^^xsd:anyURI ;
    ]] ;
  sh:select
-  """SELECT $this (schema:name AS ?path) (?name as ?value)
+  """SELECT $this ?name $givenName $familyName
      WHERE {
       $this schema:name ?name .
       $this schema:givenName ?givenName .
