@@ -278,23 +278,25 @@
     status: nonconformant
     validationEngine: shacl
     action: validate
-  - comment: 'Custom messages'
-    schemaLabel: UserShape
-    schemaURL: SHACL/messages_shapes.ttl
-    dataLabel: 'alice and bob'
-    dataURL: SHACL/messages.ttl
-    status: nonconformant
-    validationEngine: shacl
-    action: validate
-  - comment: 'Severities'
-    schemaLabel: UserShape
-    schemaURL: SHACL/severities_shapes.ttl
-    dataLabel: 'bob'
-    dataURL: SHACL/severities.ttl
-    status: nonconformant
-    validationEngine: shacl
-    action: validate
   - section: Non-validating constraints  
+    examples:
+    - comment: 'Custom messages'
+      schemaLabel: UserShape
+      schemaURL: SHACL/messages_shapes.ttl
+      dataLabel: 'alice and bob'
+      dataURL: SHACL/messages.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
+    - comment: 'Severities'
+      schemaLabel: UserShape
+      schemaURL: SHACL/severities_shapes.ttl
+      dataLabel: 'bob'
+      dataURL: SHACL/severities.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
+  - section: Target declarations
     examples:
     - comment: 'targetNode'
       schemaLabel: UserShape
@@ -346,6 +348,63 @@
       status: nonconformant
       validationEngine: shacl
       action: validate                
+    - comment: 'datatype'
+      schemaLabel: UserShape
+      schemaURL: SHACL/datatype_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/datatype.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Class of values'
+      schemaLabel: User
+      schemaURL: SHACL/class_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/class.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Node kinds'
+      schemaLabel: User
+      schemaURL: SHACL/kinds_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/kinds.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Constraints on values (in, hasValue)'
+      schemaLabel: User
+      schemaURL: SHACL/values_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/values.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'References to another shape'
+      schemaLabel: User
+      schemaURL: SHACL/references_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/references.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'References and recursion'
+      schemaLabel: User
+      schemaURL: SHACL/references_recursion_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/references_recursion.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Avoiding recursion'
+      schemaLabel: User
+      schemaURL: SHACL/avoiding_recursion_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/avoiding_recursion.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+
 # DCTAP 
 - section: DCTAP
   examples:    

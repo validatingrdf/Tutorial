@@ -1,0 +1,15 @@
+prefix :       <http://example.org/> 
+prefix sh:     <http://www.w3.org/ns/shacl#> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+:Manager rdfs:subClassOf :User .
+
+:alice a :User;
+       schema:follows :bob .  
+:bob   a :Manager ;
+       schema:follows :alice .
+:carol a :User;
+       schema:follows :alice, :dave .
+:dave  a :Employee .
