@@ -1,0 +1,18 @@
+prefix :       <http://example.org/> 
+prefix sh:     <http://www.w3.org/ns/shacl#> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+<> owl:imports <deactivating_base.ttl> .
+
+:TeacherShape  a  sh:NodeShape;
+   sh:targetClass :Teacher ;
+   sh:node        :UserShape ;
+   sh:property [ sh:path      :teaches ; 
+    sh:minCount  1; 
+    sh:datatype  xsd:string;
+  ] .
+
+:HasEmail sh:deactivated true .

@@ -286,6 +286,54 @@
     status: nonconformant
     validationEngine: shacl
     action: validate
+  - comment: 'Severities'
+    schemaLabel: UserShape
+    schemaURL: SHACL/severities_shapes.ttl
+    dataLabel: 'bob'
+    dataURL: SHACL/severities.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate
+  - comment: 'targetNode'
+    schemaLabel: UserShape
+    schemaURL: SHACL/target_nodes_shapes.ttl
+    dataLabel: 'bob'
+    dataURL: SHACL/target_nodes.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate    
+  - comment: 'targetClass'
+    schemaLabel: UserShape
+    schemaURL: SHACL/target_class_shapes.ttl
+    dataLabel: 'bob'
+    dataURL: SHACL/target_class.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate        
+  - comment: 'Implicit class targets'
+    schemaLabel: UserShape
+    schemaURL: SHACL/implicit_targets_shapes.ttl
+    dataLabel: 'alice, bob and carol'
+    dataURL: SHACL/implicit_targets.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate        
+  - comment: 'targetSubjectsOf'
+    schemaLabel: UserShape
+    schemaURL: SHACL/target_subjects_of_shapes.ttl
+    dataLabel: 'alice, bob and carol'
+    dataURL: SHACL/target_subjects_of.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate            
+  - comment: 'targetObjectsOf'
+    schemaLabel: UserShape
+    schemaURL: SHACL/target_objects_of_shapes.ttl
+    dataLabel: 'alice, bob and carol'
+    dataURL: SHACL/target_objects_of.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate                
 # DCTAP 
 - section: DCTAP
   examples:    

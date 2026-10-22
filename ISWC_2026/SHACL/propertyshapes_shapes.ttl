@@ -5,6 +5,7 @@ prefix schema: <http://schema.org/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 :User a sh:NodeShape ;
+   sh:targetClass :User ;
    sh:property [
       sh:path     schema:email ; 
       sh:nodeKind sh:IRI

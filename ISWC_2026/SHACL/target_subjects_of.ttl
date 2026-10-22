@@ -1,0 +1,13 @@
+prefix :       <http://example.org/> 
+prefix sh:     <http://www.w3.org/ns/shacl#> 
+prefix xsd:    <http://www.w3.org/2001/XMLSchema#>
+prefix schema: <http://schema.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+:alice :teaches :Algebra ;     #Passes as :UserShape
+       schema:name "Alice" .
+
+:bob   :teaches :Logic ;       #Fails as :UserShape
+       foaf:name "Robert" .
+
+:carol foaf:name 23 .          # Ignored
