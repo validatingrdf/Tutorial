@@ -230,6 +230,32 @@
     status: conformant
     validationEngine: shacl
     action: validate      
+  - comment: 'Basic'
+    schemaLabel: UserShape
+    schemaURL: SHACL/basic_shapes.ttl
+    dataLabel: 'alice, bob and carol'
+    dataURL: SHACL/basic.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate      
+  - comment: 'Basic (bnodes)'
+    schemaLabel: UserShape
+    schemaURL: SHACL/basic_shapes_bnodes.ttl
+    dataLabel: 'alice, bob and carol'
+    dataURL: SHACL/basic.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate
+  - comment: 'Node shapes'
+    schemaLabel: UserShape
+    schemaURL: SHACL/nodeshapes_shapes.ttl
+    dataLabel: 'alice, bob and anonymous'
+    dataURL: SHACL/node_shapes.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate
+- section: DCTAP
+  examples:    
   - comment: 'DCTAP (shex)'
     schemaLabel: Researcher
     schemaURL: ex17_dctap.csv
