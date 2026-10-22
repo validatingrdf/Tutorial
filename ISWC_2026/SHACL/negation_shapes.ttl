@@ -6,6 +6,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 
 :NotFoaf a sh:NodeShape ;
+ sh:targetClass :User ;
  sh:not [ a sh:Shape ;
   sh:property [
    sh:predicate foaf:name ;

@@ -476,6 +476,40 @@
       status: nonconformant
       validationEngine: shacl
       action: validate                      
+    - comment: 'Comparing values from different properties'
+      schemaLabel: User
+      schemaURL: SHACL/comparing_property_values_shapes.ttl
+      dataLabel: 'several countries'
+      dataURL: SHACL/comparing_property_values.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Closed shapes'
+      schemaLabel: User
+      schemaURL: SHACL/closed_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/closed.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Qualified Value Shapes'
+      schemaLabel: User
+      schemaURL: SHACL/qualified_valueshapes_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/qualified_valueshapes.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
+  - section: SHACL-SPARQL constraints
+    examples:      
+    - comment: 'SHACL-SPARQL givenName + lastName = name'
+      schemaLabel: UserShape
+      schemaURL: SHACL/names_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/names.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
 
 # DCTAP 
 - section: DCTAP

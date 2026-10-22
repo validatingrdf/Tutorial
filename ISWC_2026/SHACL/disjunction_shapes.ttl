@@ -8,12 +8,12 @@ prefix foaf: <http://xmlns.com/foaf/0.1/>
 :User a sh:NodeShape, rdfs:Class ;
   sh:or (
    [ sh:property [ 
-      sh:predicate foaf:name;
+      sh:path foaf:name;
       sh:minCount 1;
      ]
    ]
    [ sh:property [ 
-      sh:predicate schema:name;
+      sh:path schema:name;
       sh:minCount 1;
      ]
    ]
