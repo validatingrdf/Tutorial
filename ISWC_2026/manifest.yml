@@ -250,7 +250,7 @@
     schemaLabel: UserShape
     schemaURL: SHACL/nodeshapes_shapes.ttl
     dataLabel: 'alice, bob and anonymous'
-    dataURL: SHACL/node_shapes.ttl
+    dataURL: SHACL/nodeshapes.ttl
     status: nonconformant
     validationEngine: shacl
     action: validate
