@@ -404,6 +404,78 @@
       status: nonconformant
       validationEngine: shacl
       action: validate                      
+    - comment: 'Conjunction'
+      schemaLabel: User
+      schemaURL: SHACL/conjunction_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/conjunction.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
+    - comment: 'Disjunction'
+      schemaLabel: User
+      schemaURL: SHACL/disjunction_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/disjunction.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Negation'
+      schemaLabel: User
+      schemaURL: SHACL/negation_shapes.ttl
+      dataLabel: 'alice, bob and carol'
+      dataURL: SHACL/negation.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                   
+    - comment: 'Exactly one (xone)'
+      schemaLabel: User
+      schemaURL: SHACL/xone_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/xone.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Value ranges'
+      schemaLabel: User
+      schemaURL: SHACL/value_ranges_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/value_ranges.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'String lengths'
+      schemaLabel: User
+      schemaURL: SHACL/string_lengths_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/string_lengths.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'Regex patterns'
+      schemaLabel: User
+      schemaURL: SHACL/pattern_shapes.ttl
+      dataLabel: 'alice, bob, carol and dave'
+      dataURL: SHACL/pattern.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate          
+    - comment: 'languageIn'
+      schemaLabel: ProductShape
+      schemaURL: SHACL/languageIn_shapes.ttl
+      dataLabel: 'several products'
+      dataURL: SHACL/languageIn.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
+    - comment: 'uniqueLang'
+      schemaLabel: CountryShape
+      schemaURL: SHACL/uniqueLang_shapes.ttl
+      dataLabel: 'several countries'
+      dataURL: SHACL/uniqueLang.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate                      
 
 # DCTAP 
 - section: DCTAP
