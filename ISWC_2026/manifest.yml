@@ -278,6 +278,15 @@
     status: nonconformant
     validationEngine: shacl
     action: validate
+  - comment: 'Custom messages'
+    schemaLabel: UserShape
+    schemaURL: SHACL/messages_shapes.ttl
+    dataLabel: 'alice and bob'
+    dataURL: SHACL/messages.ttl
+    status: nonconformant
+    validationEngine: shacl
+    action: validate
+# DCTAP 
 - section: DCTAP
   examples:    
   - comment: 'DCTAP (shex)'
