@@ -529,6 +529,16 @@
     status: conformant
     validationEngine: shex
     action: validate
+- section: Wikibase
+  examples:
+  - comment: 'Q42'
+    schemaLabel: Author
+    schemaURL: es:Q42
+    dataLabel: Q42
+    endpoint: wikidata
+    status: conformant
+    validationEngine: shex
+    action: validate
 - section: PGSchema
   examples: 
   - comment: 'PGSchema'

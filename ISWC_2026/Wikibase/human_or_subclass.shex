@@ -1,0 +1,11 @@
+prefix :    <http://example.org/>
+prefix wd:  <http://www.wikidata.org/entity/>
+prefix wdt: <http://www.wikidata.org/prop/direct/>
+
+:Person { wdt:P31 @:Human ; wdt:P31 . * }
+
+:Human NOT @:NoHuman
+
+:NoHuman (NOT [ wd:Q25 ]) AND { 
+    wdt:P279 @:NoHuman * 
+}
