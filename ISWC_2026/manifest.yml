@@ -269,7 +269,7 @@
     dataURL: SHACL/paths_propertyshapes.ttl
     status: nonconformant
     validationEngine: shacl
-    action: validate- section: DCTAP
+    action: validate 
   - comment: 'Repeated parameters in shapes'
     schemaLabel: UserShape
     schemaURL: SHACL/repeated_parameters_shapes.ttl
