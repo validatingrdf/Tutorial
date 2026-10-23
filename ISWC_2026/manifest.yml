@@ -14,6 +14,11 @@
        queryURL: ex01.sparql
        queryEngine: sparql
        action: query
+     - comment: 'Wikidata and SPARQL'
+       endpoint: wikidata
+       queryURL: wikidata.sparql
+       queryEngine: sparql
+       action: query
      - comment: 'Property graph (Tim Berners Lee)'
        dataLabel: Tim Berners
        dataURL: ex02.pg

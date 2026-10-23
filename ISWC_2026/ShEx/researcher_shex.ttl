@@ -1,0 +1,52 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sx: <http://www.w3.org/ns/shex#> .
+@prefix : <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+
+:Organization sx:shapeExpr _:b0 ;
+	a sx:ShapeDecl .
+
+:Researcher sx:shapeExpr [ 
+	sx:expression _:b7 ;
+	              a sx:Shape ] ;
+	a sx:ShapeDecl .
+
+:Place sx:shapeExpr _:b2 ;
+	a sx:ShapeDecl .
+_:b3 sx:shapes _:b4 ;
+	a sx:Schema .
+_:b0 a sx:Shape .
+_:b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> :Organization .
+_:b2 a sx:Shape .
+_:b6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b5 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> :Place .
+_:b7 a sx:EachOf ;
+	sx:expressions _:b8 .
+_:b9 a sx:TripleConstraint ;
+	sx:predicate :employer ;
+	sx:valueExpr :Organization .
+_:b10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b9 .
+_:b11 a sx:TripleConstraint ;
+	sx:predicate :birthDate ;
+	sx:valueExpr _:b12 .
+_:b12 sx:datatype xsd:date ;
+	a sx:NodeConstraint .
+_:b13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b10 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b11 .
+_:b14 a sx:TripleConstraint ;
+	sx:predicate :birthPlace ;
+	sx:valueExpr :Place .
+_:b15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b13 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b14 .
+_:b16 a sx:TripleConstraint ;
+	sx:predicate :name ;
+	sx:valueExpr _:b17 .
+_:b17 sx:datatype xsd:string ;
+	a sx:NodeConstraint .
+_:b8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b15 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:b16 .
+_:b4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:b6 ;
+	<http://www.w3.org/1999/02/22-rdf-syntax-ns#first> :Researcher .
