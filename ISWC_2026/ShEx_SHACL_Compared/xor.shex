@@ -1,0 +1,8 @@
+prefix :       <http://example.org/> 
+prefix schema: <http://schema.org/>
+prefix foaf: <http://xmlns.com/foaf/0.1/>
+
+:Person {
+  foaf:firstName . ; foaf:lastName . 
+| schema:givenName . ; schema:familyName .
+}

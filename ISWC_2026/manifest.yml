@@ -534,6 +534,22 @@
       status: nonconformant
       validationEngine: shacl
       action: validate
+    - comment: 'xor and xone'
+      schemaLabel: Person
+      schemaURL: ShEx_SHACL_Compared/xor.shex
+      dataURL: ShEx_SHACL_Compared/xor.ttl
+      queryMapURL: ShEx_SHACL_Compared/xor.map
+      status: nonconformant
+      validationEngine: shex
+      action: validate
+    - comment: 'xor and xone'
+      schemaLabel: Person
+      schemaURL: ShEx_SHACL_Compared/xor_shapes.ttl
+      dataLabel: 'invoice'
+      dataURL: ShEx_SHACL_Compared/xor.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
 # DCTAP 
 - section: DCTAP
   examples:    
