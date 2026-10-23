@@ -538,10 +538,11 @@
   examples:
   - comment: 'Q42'
     schemaLabel: Author
-    schemaURL: es:Q42
+    schemaURL: es:E42
     dataLabel: Q42
     endpoint: wikidata
     status: conformant
+    queryMap: "wd:Q42@START"
     validationEngine: shex
     action: validate
 - section: PGSchema
