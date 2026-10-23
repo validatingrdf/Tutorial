@@ -1,1 +1,1 @@
-:i1@:Invoice, :i2@:Invoice, :i3@:Invoice
+{FOCUS a :Invoice}@:Invoice
