@@ -556,7 +556,7 @@
   examples:
   - comment: 'Q42'
     schemaLabel: Author
-    schemaURL: es:E42
+    schemaURL: https://www.wikidata.org/wiki/Special:EntitySchemaText/E42
     dataLabel: Q42
     endpoint: wikidata
     status: conformant
