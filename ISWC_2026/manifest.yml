@@ -515,7 +515,25 @@
       status: nonconformant
       validationEngine: shacl
       action: validate
-
+- section: ShEx and SHACL compared
+  examples:
+    - comment: 'Property paths (invoice)'
+      schemaLabel: Invoice
+      schemaURL: ShEx_SHACL_Compared/invoice.shex
+      dataLabel: 'invoice'
+      dataURL: ShEx_SHACL_Compared/invoice.ttl
+      queryMapURL: ShEx_SHACL_Compared/invoice.map
+      status: nonconformant
+      validationEngine: shex
+      action: validate
+    - comment: 'Property paths (invoice)'
+      schemaLabel: Invoice
+      schemaURL: ShEx_SHACL_Compared/invoice_shapes.ttl
+      dataLabel: 'invoice'
+      dataURL: ShEx_SHACL_Compared/invoice.ttl
+      status: nonconformant
+      validationEngine: shacl
+      action: validate
 # DCTAP 
 - section: DCTAP
   examples:    
