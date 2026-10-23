@@ -5,7 +5,7 @@ prefix schema: <http://schema.org/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 
-:PersonShape a sh:NodeShape;
+:PersonShape a sh:NodeShape, rdfs:Class ;
  sh:xone (
  [ sh:property [
     sh:path foaf:firstName;

@@ -5,17 +5,21 @@ prefix schema: <http://schema.org/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix foaf: <http://xmlns.com/foaf/0.1/>
 
-:alice foaf:firstName "Alice" ; 
+:alice a :Person ;
+       foaf:firstName "Alice" ; 
        foaf:lastName "Cooper" .
 
-:bob schema:givenName "Robert" ;
-     schema:familyName "Smith" .
+:bob a :Person ;
+    schema:givenName "Robert" ;
+    schema:familyName "Smith" .
 
-:carol foaf:firstName "Carol" ; 
+:carol a :Person; 
+       foaf:firstName "Carol" ; 
        foaf:lastName "King" ;
        schema:givenName "Carol" ;
        schema:familyName "King" .
 
-:dave foaf:firstName "Dave" ;  
+:dave a :Person ;
+      foaf:firstName "Dave" ;  
       foaf:lastName "Clark" ;
       schema:givenName "Dave" .
