@@ -555,14 +555,14 @@
   examples:    
   - comment: 'DCTAP (shex)'
     schemaLabel: Researcher
-    schemaURL: ex17_dctap.csv
+    schemaURL: DCTAP/researcher.csv
     schemaFormat: csv
     schemaEngine: dctap
     prefixes: |
      BASE <http://example.org/>
      PREFIX : <http://example.org/>
     dataLabel: Tim Berners Lee
-    dataURL: ex11_timbl.ttl
+    dataURL: DCTAP/timbl.ttl
     dataFormat: turtle
     queryMap: ":timbl@:Researcher"
     status: conformant

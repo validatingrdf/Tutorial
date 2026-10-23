@@ -1,5 +1,5 @@
 shapeID    , propertyID   , propertyLabel , mandatory, repeatable, valueDataType,valueShape
-Researcher , rdfs:label   , Label         , TRUE     , FALSE     ,xsd:string
+Researcher ,name, Label         , TRUE     , FALSE     ,xsd:string
 Researcher , birthPlace  , Place of birth, FALSE    , FALSE     , ,Place
 Researcher , birthDate   , Date of birth , FALSE    , FALSE     ,xsd:date
 Researcher , employer    , Employer      , FALSE    , TRUE      , ,Organization,
