@@ -16,5 +16,5 @@ prefix xsd: <http://www.w3.org/2001/XMLSchema#>
   sh:property [
    sh:path :end ;
    sh:datatype xsd:integer ;
-   sh:minCount 1 ; sh:maxCount 1
+   sh:minCount 0 ; sh:maxCount 1 
  ]]] . 

@@ -1,0 +1,22 @@
+prefix : <http://example.org/> 
+prefix sh: <http://www.w3.org/ns/shacl#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+:UserBeliefs {
+  a [ :Belief ] ;
+  rdf:reifies TRIPLE(@:Person :knows @:Peron);
+  :since xsd:date ?  ;
+  :statedIn [:internal_note :email]
+}
+
+:Person {
+  :name xsd:string
+}
+
+# Data 
+:b1 a :Belief ;
+    rdf:reifies <<( :alice :knows :bob )>> ;
+    :since "2010-03-02"^^xsd:date  ;
+    :statedIn :internal_note .
+:alice :name "Alice" .
+:bob :name "Robert" .

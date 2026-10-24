@@ -1,0 +1,32 @@
+prefix : <http://example.org/> 
+prefix sh: <http://www.w3.org/ns/shacl#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+:UserShape {
+   :employer @:Organization {| @DatedStatement |} ;
+   :award IRI {| @YearStatement |}
+              {| @Togetherness |}?
+}
+
+:YearStatement {
+   :year xsd:integer {| @:ProvenanceStatement |}
+}
+
+:Togetherness {
+   :together_with IRI {| @:ProvenanceStatement |} 
+}
+
+:DatedStatement {
+   :start xsd:integer {| @:ProvenanceStatement |} ;
+   :end xsd:integer {| @:ProvenanceStatement |}
+}
+
+:ProvenanceStatement {
+   :accordingTo [ :wikidata :dbpedia ] {| @:StatedInfo |}
+}
+
+:StatedInfo {
+   :statedIn xsd:date
+}
+
+:Organization {}

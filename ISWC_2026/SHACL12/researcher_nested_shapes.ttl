@@ -1,0 +1,66 @@
+prefix : <http://example.org/> 
+prefix sh: <http://www.w3.org/ns/shacl#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+:UserShape a sh:NodeShape ;
+ sh:targetClass :User ;
+ sh:property [
+  sh:path :employer ;
+  sh:reificationRequired true ;
+  sh:reifierShape :DatedStatement ] ;
+ sh:property [
+  sh:path :award ;
+  sh:reificationRequired true ;
+  sh:reifierShape :YearStatement ;
+  sh:reifierShape :Togetherness ;
+  sh:nodeKind sh:IRI
+] .
+
+:YearStatement a :NodeShape ;
+   sh:property [
+    sh:path :year ;
+    sh:reificationRequired true ;
+    sh:reifierShape :ProvenanceStatement ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ; sh:maxCount 1
+  ] .
+
+:Togetherness a :NodeShape ;
+   sh:property [
+    sh:path :together_with ;
+    sh:reificationRequired true ;
+    sh:reifierShape :ProvenanceStatement ;
+    sh:nodeKind sh:IRI ;
+  ] .
+
+:DatedStatement a :NodeShape ;
+   sh:property [
+    sh:path :start ;
+    sh:reificationRequired true ;
+    sh:reifierShape :ProvenanceStatement ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ; sh:maxCount 1
+  ] ;
+  sh:property [
+   sh:path :end ;
+    sh:reificationRequired true ;
+    sh:reifierShape :ProvenanceStatement ;
+    sh:datatype xsd:integer ;
+    sh:minCount 1 ; sh:maxCount 1
+ ] .
+
+:ProvenanceStatement a sh:NodeShape ;
+  sh:property [
+    sh:path :accordingTo ;
+    sh:in ( :wikidata ) ;
+    sh:reifierShape :StatedInfo ;
+    sh:reificationRequired true 
+  ] .
+
+:StatedInfo a sh:NodeShape ;
+  sh:property [
+   sh:path :statedIn ;
+   sh:minCount 1 ;
+   sh:maxCount 1 ;
+   sh:datatyoe xsd:date
+  ] .
