@@ -607,10 +607,10 @@
     action: validate
   - comment: 'SHACL 1.2 (nested)'
     schemaLabel: Researcher
-    schemaURL: SHACL12/timbl_nested.ttl
+    schemaURL: SHACL12/researcher_nested_shapes.ttl
     schemaFormat: turtle
     dataLabel: Tim Berners Lee
-    dataURL: SHACL12/researcher_nested_shapes.ttl
+    dataURL: SHACL12/timbl_nested.ttl
     dataFormat: turtle
     status: conformant
     validationEngine: shacl
